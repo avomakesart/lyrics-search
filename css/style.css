@@ -47,6 +47,7 @@ h2 {
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
+    max-width: 100%;
 }
 .input label {
     flex: 0 0 120px;
