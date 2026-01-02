@@ -1,8 +1,11 @@
-html{
+html {
     min-height: 100%;
     box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -11,35 +14,43 @@ body {
     font-family: 'Montserrat', sans-serif;
     min-height: 100%;
 }
+
 h1 {
     font-weight: 400;
     text-align: center;
 }
+
 h2 {
     text-align: center;
 }
 
-.contenido {
+.content {
     background-color: white;
     max-width: 1100px;
-    margin:  0 auto;
+    margin: 0 auto;
     height: 100%;
     padding: 20px;
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+    border-left: 8px;
 }
 
 
 @media (min-width:768px) {
-    .contenedor {
+    .container {
         display: flex;
     }
-    .contenedor > div {
+
+    .container>div {
         flex: 1 0 50%;
     }
 }
-.formulario-busqueda p {
+
+.search-form p {
     text-align: center;
 }
-.formulario-busqueda span {
+
+.search-form span {
     color: red;
 }
 
@@ -48,6 +59,7 @@ h2 {
     display: flex;
     align-items: center;
 }
+
 .input label {
     flex: 0 0 120px;
     text-align: right;
@@ -55,9 +67,11 @@ h2 {
     font-weight: 700;
     text-transform: uppercase;
 }
+
 .input span {
     color: red;
 }
+
 .input input[type="text"] {
     height: 2.5rem;
     padding: 1rem;
@@ -65,18 +79,21 @@ h2 {
     flex: 1;
     width: 9rem;
 }
-.enviar {
+
+.send {
     text-align: right;
-    justify-content: flex-end!important;
+    justify-content: flex-end !important;
 }
-.input input[type="submit"]{
+
+.input input[type="submit"] {
     background-color: #6f86d6;
     padding: .5rem 2rem;
     color: white;
     align-self: flex-end;
-    border:none;
+    border: none;
     transition: background-color .3s ease-in-out;
-} 
+}
+
 .input input[type="submit"]:hover {
     cursor: pointer;
     background-color: #384e9d;
@@ -90,7 +107,7 @@ h2 {
 }
 
 
-#resultado {
+#result {
     white-space: pre-wrap;
     padding: 2rem;
 }
