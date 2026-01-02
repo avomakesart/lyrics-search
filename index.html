@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,40 +11,42 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
 
-    <main id="contenido" class="contenido">
-            <h1>Letras de Canciones</h1>
-            <div class="contenedor">
-                    <div id="buscar" class="buscar">
-                            <h2>Búsqueda</h2>
-                            <p>Busca por artista y nombre:</p>
-                            <p><span> * </span>Obligatorio</p>
-                            <form action="#" id="formulario-buscar">
-                                <div class="input">
-                                    <label for="artista">Artista: <span>*</span></label>
-                                    <input type="text" id="artista" placeholder="Artista">
-                                </div>
-                                <div class="input">
-                                    <label for="cancion">Canción: <span>*</span></label>
-                                    <input type="text" id="cancion" placeholder="Nombre Canción">
-                                </div>
-
-                                <div class="input enviar">
-                                    <input type="submit" value="Buscar">
-                                </div>
-
-                                <div id="mensajes"></div>
-                            </form>
+    <main id="content" class="content">
+        <h1>Song Lyrics</h1>
+        <div class="container">
+            <div id="search" class="search">
+                <h2>Search</h2>
+                <p>Search by artist and song name:</p>
+                <p><span> * </span>Required</p>
+                <form action="#" id="search-form">
+                    <div class="input">
+                        <label for="artist">Artist: <span>*</span></label>
+                        <input type="text" id="artist" placeholder="Artist Name">
                     </div>
-                    <div class="letra-resultado">
-                            <h2>Resultado</h2>
-                            <div id="resultado"></div>
+                    <div class="input">
+                        <label for="song">Song: <span>*</span></label>
+                        <input type="text" id="song" placeholder="Song Name">
                     </div>
+
+                    <div class="input send">
+                        <input type="submit" value="Search Lyrics">
+                    </div>
+
+                    <div id="messages"></div>
+                </form>
             </div>
+            <div class="lyrics-result">
+                <h2>Result</h2>
+                <div id="result"></div>
+            </div>
+        </div>
     </main>
 
-    
+
     <script src="js/app.js" type="module"></script>
 </body>
+
 </html>
